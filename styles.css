@@ -1,0 +1,268 @@
+/*--------------------- general selectors ----------------*/
+
+* {
+    scroll-behavior: smooth;
+}
+
+:root { /* for color variables */
+    --mint-green: #85ff9e;
+    --jet: #292929;
+    --maximum-blue-purple: #baa5ff;
+    --spanish-gray: #969c99;
+    --battleship-grey: #808782;
+  }
+
+body {
+    background-color: var(--jet);
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    max-width: 425px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+/*--------------------- general *class* selectors ----------------*/
+
+.paragraph {
+    font-family: source sans pro;
+    color: var(--battleship-grey)
+}
+
+.paragraph:hover {
+    color: var(--mint-green);
+    transition: 0.05s;
+  }
+
+  .divider { /* will probably change width eventually */
+    width: 100%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--maximum-blue-purple);
+  }
+
+  .letter:hover { /* really cool effect, really time consuming */
+    color: var(--spanish-gray);
+    transition: 0.05s;
+  }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*--------------------- header selectors ----------------*/
+
+header {
+    background-color: var(--jet);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center; /* this is shifting nav bar over */
+}
+
+header h1 {
+    color: var(--battleship-grey);
+    font-family: oswald;
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+#headshot {
+    width: 50px; 
+}
+
+#profile-pic {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: var(--battleship-grey);
+    overflow: hidden;
+}
+
+#navbar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#navbar a {
+    font-family: source sans pro;
+    color: var(--battleship-grey);
+    margin: auto 12.5px;
+}
+
+#navbar a:hover {
+    color: var(--mint-green);
+}
+
+#resume {
+    display: inline-block; 
+    border-style: solid;
+    border-color: var(--mint-green);
+    border-radius: 20px;
+}
+
+#resume a {
+    color: var(--mint-green);
+}
+
+#resume:hover {
+    border-color: var(--maximum-blue-purple);
+    background-color: var(--maximum-blue-purple);
+}
+
+#resume a:hover {
+    color: var(--jet);
+}
+
+#nav-1 {
+  
+}
+
+/*--------------------- welcome selectors ----------------*/
+
+#welcome-section h1, #welcome-section h2 {
+    color: var(--battleship-grey);
+    font-family: oswald;
+}
+
+#hi-there {
+    color: var(--mint-green);
+    font-family: roboto mono;
+}
+
+#welcome-section {
+    margin-top: 110px;
+    height: 600px;
+    padding-top: 300px;
+}
+
+/*--------------------- about selectors ----------------*/
+
+#about {
+    height: 600px;
+    padding-top: 300px;
+}
+
+#about-me {
+    color: var(--mint-green);
+    font-family: roboto mono; /* fix font family */
+}
+
+#about a {
+    margin: auto 10px;
+    color: var(--mint-green);
+}
+
+#about a:hover {
+    color: var(--jet);
+}
+
+/*--------------------- project selectors ----------------*/
+
+#projects {
+    height: 900px;
+    scroll-margin-top: 130px; /* nav-scroll was broken and going to far, this fixes it */
+}
+
+#my-projects {
+    color: var(--mint-green);
+    font-family: roboto mono;
+}
+
+#project-flexbox {
+    flex-direction: column;
+    text-align: center;
+}
+
+#project-description {
+    text-align: center;
+}
+
+.project-tile {
+    width: 300px;
+    height: 250px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--mint-green);
+}
+
+.project-header {
+    font-family: roboto mono;
+    color: var(--battleship-grey);
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+}
+
+/*--------------------- contact selectors ----------------*/
+
+#contact {
+    width: 320px;
+    height: 500px;
+    padding-top: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact h1 {
+    color: var(--battleship-grey);
+    font-family: oswald;
+    text-align: center;
+}
+
+#contact p {
+    text-align: center;
+}
+
+#contact a {
+    color: var(--mint-green);
+    margin: 0 10px;
+}
+
+.contact-container {
+    display: inline-block; 
+    border-style: solid;
+    border-color: var(--mint-green);
+    margin-left: 15px;
+    border-radius: 20px;
+}
+
+.contact-container:hover {
+    border-color: var(--maximum-blue-purple);
+    background-color: var(--maximum-blue-purple);
+}
+
+#contact a:hover {
+    color: var(--jet);
+}
+
+/*--------------------- footer selectors ----------------*/
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+footer a {
+    color: var(--mint-green);
+    font-family: roboto mono;
+}
+
+footer a:hover {
+    color: var(--maximum-blue-purple);
+}

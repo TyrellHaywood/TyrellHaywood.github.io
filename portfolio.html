@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tyrell's Personal Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Mono&family=Source+Sans+Pro">
+  </head>
+  <body>
+    <header class="flex-container">
+      <div id="profile-pic"> <!-- might do circle styling after but focus on img size and shape first -->
+        <img id="headshot" src="https://drive.google.com/uc?id=1jlmFGd66KOADXM8lgUr8cO60bjp5ELZv"> <!-- will need to figure out how to scale image within  border, maybe will remove border and add it after image is done -->
+      </div>
+      <h1 id="full-name">
+        <span class="letter">T</span><span class="letter">y</span><span class="letter">r</span><span class="letter">e</span><span class="letter">l</span><span class="letter">l</span> <span class="letter">H</span><span class="letter">a</span><span class="letter">y</span><span class="letter">w</span><span class="letter">o</span><span class="letter">o</span><span class="letter">d</span>
+      </h1>
+      <nav id="navbar">
+        <a id="nav-1" href="#about">About</a>
+        <a id="nav-2" href="#projects">Work</a>
+        <a id="nav-3" href="#contact">Contact</a>
+        <div id="resume">
+          <a href="">Resume</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="welcome-section">
+        <div id="welcome-div">
+          <p id="hi-there">Hi there,</p>
+          <h1>
+            <span class="letter">I</span><span class="letter">'</span><span class="letter">m</span> <span class="letter">T</span><span class="letter">y</span><span class="letter">r</span><span class="letter">e</span><span class="letter">l</span><span class="letter">l</span>
+          </h1>
+          <h2>
+            <span class="letter">A</span><span class="letter">s</span><span class="letter">p</span><span class="letter">i</span><span class="letter">r</span><span class="letter">i</span><span class="letter">n</span><span class="letter">g</span> <span class="letter">W</span><span class="letter">e</span><span class="letter">b</span> <span class="letter">D</span><span class="letter">e</span><span class="letter">v</span><span class="letter">e</span><span class="letter">l</span><span class="letter">o</span><span class="letter">p</span><span class="letter">e</span><span class="letter">r</span>
+          </h2>
+          <p id="intro" class="paragraph">some more text here. this will eventually contain a little bit about myself (where im from, what I do, etc...)</p>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <section id="about">
+        <h1 id="about-me">About Me</h1>
+        <p class="paragraph">this is where i'll write more about myself. where im from, how long i've been coding, why i code and what my goals are. future plans for school or living, stuff like that.</p>
+        <p class="paragraph">Here is the second paragraph, i'll talk a little about how i've been learning to code thru freecodecamp and make a button that goes beside / beneath this paragraph</p>
+        <div id="fcc-contact" class="contact-container">
+          <a href="https://www.freecodecamp.org/TyrellHaywood" id="fcc-profile" class="paragraph">My Profile</a>
+        </div>
+      </section> 
+      <div class="divider"></div>
+      <section id="projects">
+        <h1 id="my-projects">Featured Projects</h1>
+        <div id="project-flexbox" class="flex-container">
+          <h2 class="project-header">Project 1</h2>
+          <div class="project-tile">
+             <!-- project link = https://drive.google.com/uc?id=1igBUagjx1g_3JYca8vwU6-PtGedIGHcM/ -->
+            <a href="https://www.freecodecamp.org/certification/TyrellHaywood/responsive-web-design">
+              <img id="project-1" class="project-img" src="https://drive.google.com/uc?id=1igBUagjx1g_3JYca8vwU6-PtGedIGHcM">
+            </a>
+          </div>
+          <p class="paragraph project-description">small blurb abt project and what it was for. small blurb abt project and what it was for. small blurb abt project and what it was for</p>
+          <h2 class="project-header">Project 2</h2>
+          <div class="project-tile">
+             <!-- project link = https://drive.google.com/uc?id=1_Y-nWNknkkPp0HJ7ctNYmWWgwIB1UZoC/ -->
+            <a href="https://www.freecodecamp.org/certification/TyrellHaywood/responsive-web-design">
+              <img id="project-2" class="project-img" src="https://drive.google.com/uc?id=1_Y-nWNknkkPp0HJ7ctNYmWWgwIB1UZoC">
+            </a>
+          </div>
+          <p class="paragraph project-description">small blurb abt project and what it was for. small blurb abt project and what it was for. small blurb abt project and what it was for</p>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <section id="contact"> 
+          <h1>
+            <span class="letter">L</span><span class="letter">e</span><span class="letter">t</span><span class="letter">'</span><span class="letter">s </span><span class="letter">C</span><span class="letter">o</span><span class="letter">n</span><span class="letter">n</span><span class="letter">e</span><span class="letter">c</span><span class="letter">t</span>
+          </h1> 
+          <p class="paragraph">a little something abt where to reach me</p>
+          <div class="contact-container">
+            <a id="Instagram" href="https://www.instagram.com/tyrell.haywood/" class="paragraph">Instagram</a>
+          </div>
+          <div class="contact-container">
+            <a id="linkedin" href="https://ca.linkedin.com/in/tyrell-haywood" class="paragraph">LinkedIn</a>
+          </div>
+           <!-- links with icons -->
+          <div class="contact-container">
+            <a id="email" href="mailto:tyrelltman@gmail.com" class="paragraph">Mail</a> 
+          </div>   
+      </section>
+    </main>
+    <footer>
+      <a id="profile-link" href="" target="_blank">Designed & Created by Tyrell Haywood</a>
+    </footer>
+  </body>
+</html> 
