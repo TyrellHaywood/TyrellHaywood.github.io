@@ -38,7 +38,7 @@ main {
     transition: 0.05s;
   }
 
-  .divider { /* will probably change width eventually */
+  .divider { 
     width: 90%;
     height: 2px;
     margin-left: auto;
@@ -66,7 +66,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    text-align: center; /* this is shifting nav bar over */
+    text-align: center;
 }
 
 header h1 {
@@ -393,7 +393,7 @@ footer ion-icon:hover {
 @media only screen and (min-width: 62.5em) { /* 1000px */
 
     main {
-        max-width: 1500px; /* og is 1100px */
+        max-width: 1500px;
         margin-right: auto;
         margin-left: auto;
     }
