@@ -39,7 +39,7 @@ main {
   }
 
   .divider { /* will probably change width eventually */
-    width: 100%;
+    width: 90%;
     height: 2px;
     margin-left: auto;
     margin-right: auto;
@@ -77,7 +77,9 @@ header h1 {
 }
 
 #headshot {
-    width: 50px; 
+    width: 50px;
+    position: relative; /* allows us to reposition image */
+    bottom: 10px;
 }
 
 #profile-pic {
@@ -86,8 +88,8 @@ header h1 {
     margin-left: auto;
     border-radius: 50%;
     border-style: solid;
-    border-width: 0.5px;
-    border-color: var(--battleship-grey);
+    border-width: 2px;
+    border-color: var(--mint-green);
     overflow: hidden;
 }
 
@@ -127,26 +129,28 @@ header h1 {
     color: var(--jet);
 }
 
-#nav-1 {
-  
-}
-
 /*--------------------- welcome selectors ----------------*/
 
 #welcome-section h1, #welcome-section h2 {
     color: var(--battleship-grey);
     font-family: oswald;
+    margin-top: 0.2em;
+}
+
+#welcome-section h1 {
+    margin-bottom: 0;
 }
 
 #hi-there {
     color: var(--mint-green);
     font-family: roboto mono;
+    margin-bottom: 0;
 }
 
 #welcome-section {
     margin-top: 110px;
-    height: 600px;
-    padding-top: 300px;
+    height: 700px;
+    padding-top: 250px; /* wanted text to sit higher up on mobile */
 }
 
 /*--------------------- about selectors ----------------*/
@@ -161,6 +165,10 @@ header h1 {
     font-family: roboto mono; /* fix font family */
 }
 
+#about .contact-container {
+    margin-left: 60%
+}
+
 #about a {
     margin: auto 10px;
     color: var(--mint-green);
@@ -173,7 +181,7 @@ header h1 {
 /*--------------------- project selectors ----------------*/
 
 #projects {
-    height: 900px;
+    height: 1000px;
     scroll-margin-top: 130px; /* nav-scroll was broken and going to far, this fixes it */
 }
 
@@ -197,6 +205,11 @@ header h1 {
     border-style: solid;
     border-width: 2px;
     border-color: var(--mint-green);
+    background-color: var(--mint-green);
+}
+
+.project-tile:hover img {
+    opacity: 0.8;
 }
 
 .project-header {
@@ -212,17 +225,18 @@ header h1 {
 /*--------------------- contact selectors ----------------*/
 
 #contact {
-    width: 320px;
     height: 500px;
     padding-top: 400px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 #contact h1 {
     color: var(--battleship-grey);
     font-family: oswald;
     text-align: center;
+    margin-bottom: 0;
 }
 
 #contact p {
@@ -231,15 +245,28 @@ header h1 {
 
 #contact a {
     color: var(--mint-green);
-    margin: 0 10px;
 }
 
 .contact-container {
     display: inline-block; 
     border-style: solid;
     border-color: var(--mint-green);
-    margin-left: 15px;
     border-radius: 20px;
+}
+
+#contact .contact-container {
+    width: 90px; 
+}
+
+#instagram {
+    position: relative;
+    bottom: 1px;
+    right: 1px; 
+}
+
+#instagram ion-icon { /* was sitting weird, had to adjust individually */
+    top: 3px;
+    left: 3px;
 }
 
 .contact-container:hover {
@@ -248,6 +275,17 @@ header h1 {
 }
 
 #contact a:hover {
+    color: var(--jet);
+}
+
+ion-icon {
+    color: var(--mint-green);
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+#contact ion-icon:hover {
     color: var(--jet);
 }
 
@@ -265,4 +303,139 @@ footer a {
 
 footer a:hover {
     color: var(--maximum-blue-purple);
+}
+
+footer ion-icon:hover {
+    color: var(--maximum-blue-purple);
+}
+
+/*----------------- media queries --------------------------*/
+
+@media only screen and (min-width: 40.625em) { /* 650px */
+    main {
+        width: 80%;
+        max-width: 750px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    header h1 {
+        font-size: 2.3em;
+    }
+
+    header a {
+        font-size: 1.3em;
+    }
+
+    #welcome-section h1 {
+        font-size: 2.3em;
+    }
+
+    #intro {
+        max-width: 400px ;
+    }
+
+    #about .contact-container {
+        margin-left: 70%;
+    }
+
+    #contact h1 {
+        font-size: 2em; 
+    }
+
+    #contact .contact-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 50em) { /* 800px */
+    main {
+        width: 80%;
+        max-width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    header {
+        display: inline-block;
+    }
+
+    #profile-pic {
+        margin-left: 25px; 
+    }
+
+    #navbar {
+        display: inline-block; 
+        width: 400px ;
+        margin: auto 0 auto auto;
+    }
+
+    #welcome-section h1 {
+        font-size: 3em;
+    }
+
+    #welcome-section h2 {
+        font-size: 2em; 
+    }
+
+    #contact h1 {
+        font-size: 3em;  
+    }
+
+    .paragraph {
+        max-width: 750px;
+    }
+
+}
+
+@media only screen and (min-width: 62.5em) { /* 1000px */
+
+    main {
+        max-width: 1500px; /* og is 1100px */
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #welcome-section, #about, #projects, #contact {
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header {
+        display: inline-block;
+    }
+
+    #profile-pic {
+        margin-left: 25px; 
+    }
+
+    #navbar {
+        display: inline-block; 
+        width: 400px ;
+        margin: auto 0 auto auto;
+    }
+
+    #welcome-section h1 {
+        font-size: 5em;
+    }
+
+    #welcome-section h2 {
+        font-size: 3rem;
+    }
+
+    #about .contact-container {
+        margin-left: 50%; /* not terrible, might change in future */
+    }
+
+    #contact h1 {
+        font-size: 5em;  
+    }
+
+    .divider {
+        width: auto;
+    }
+
 }
