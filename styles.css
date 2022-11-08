@@ -388,6 +388,12 @@ footer ion-icon:hover {
         max-width: 750px;
     }
 
+    #contact p { /* the above line is affecting this paragraph, this is added to fix that */
+        max-width: 700px ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 @media only screen and (min-width: 62.5em) { /* 1000px */
