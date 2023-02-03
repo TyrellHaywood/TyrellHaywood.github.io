@@ -1,0 +1,45 @@
+/*--------------color palette-------------------*/
+:root { 
+    --blue: #738290;
+    --black: #222222;
+    --cream: #FFFFF3;
+    --dark-pink: #B7245C;
+    --pink: #FBACBE;
+  }
+
+/* ------------main selectors-----------------*/ 
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--cream);
+    background-size: 100px 100px;
+}
+
+header {
+  text-align: center;
+  margin-top: 120px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header h1 {
+  font-family: pacifico;
+  color: var(--dark-pink);
+  font-size: 45px;
+}
+
+/* ------------class & id selectors-----------------*/ 
+
+.image-holder {
+  width: 400px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+#pixel-art {
+  width: 400px;
+  height: 400px;
+}

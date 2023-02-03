@@ -1,0 +1,75 @@
+/*--------------color palette-------------------*/
+:root { 
+    --blue: #738290;
+    --black: #222222;
+    --cream: #FFFFF3;
+    --dark-pink: #B7245C;
+    --pink: #FBACBE;
+  }
+
+/* ------------main selectors-----------------*/ 
+body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("https://drive.google.com/uc?id=1DqqHklDnho1ygESRAdYdQwrJDD9zcFR8"); /*https://drive.google.com/file/d/1DqqHklDnho1ygESRAdYdQwrJDD9zcFR8/view?usp=share_link */
+    background-size: 390px 844px;
+   
+    
+}
+/* ------------class selectors-----------------*/ 
+.heart {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    background-color: var(--pink);
+    border-radius: 10%;
+    transform: rotate(-45deg);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heart::after {
+    content: '';
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: 0;
+    top: -50%;
+    background-color: inherit;
+}
+/* these classes help make the heart */
+.heart::before {
+    content: '';
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: -50%;
+    top: 0;
+    background-color: inherit;
+}
+/* 150px */
+.text-holder {
+
+    position: relative;
+    z-index: 99;
+    height: auto;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: -175px; /*-----just in case, original was 115-----------*/
+}
+
+.text-holder a {
+    color: var(--black);
+    margin-left: auto;
+    margin-right: auto;
+    font-family: pacifico;
+    text-decoration: none;
+    font-size: 72px;
+}

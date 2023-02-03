@@ -1,0 +1,55 @@
+/*--------------color palette-------------------*/
+:root { 
+    --blue: #738290;
+    --black: #222222;
+    --cream: #FFFFF3;
+    --dark-pink: #B7245C;
+    --pink: #FBACBE;
+  }
+
+
+
+/* ------------main selectors-----------------*/ 
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--cream);
+}
+
+header {
+
+    text-align: center;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+}
+
+header h1 { 
+    font-family: pacifico;
+    font-size: 50px;
+    color: var(--dark-pink);
+}
+
+/* ------------class selectors-----------------*/ 
+
+.circle {
+    display: flex;
+    height: 175px;
+    width: 175px;
+    background-color: var(--pink);
+    border-radius: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.circle a {
+    font-family: pacifico;
+    color: var(--black);
+    font-size: 50px;
+    text-decoration: none;
+}
