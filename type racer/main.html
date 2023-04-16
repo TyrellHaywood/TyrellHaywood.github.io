@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+
+    <title>type racer</title>
+
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <header class="header" id="header">
+      <div class="home-button-container">
+        <a href="index.html" class="home-button" id="home-button">Home</a>
+      </div>
+    </header>
+    
+    <audio class='audio' id="audio" autoplay>
+        <source src="bossa-nova.mp3">
+    </audio>
+
+    <div class="audio-mute">
+      <button id="mute" class="unmuted" type="button"></button>
+    </div>
+    
+
+    <div class="stats">
+      <div class="wpm-title" id="wpm-title">WPM:</div>
+      <div class="wpm" id="wpm">0</div>
+      <div class="timer" id="timer">0</div>
+    </div>
+
+
+    <div class="container"> <!-- this holds both text area and given text prompt -->
+      <div class="quote-display" id="quote-display"></div>
+      <textarea id="textbox" class="textbox"></textarea> <!-- can also add 'autofocus' attribute, this makes our cursor automatically place within textbox -->
+    </div>
+
+    
+    <div class="prog-bar" id="prog-bar">
+      <div class="filler" id='filler'></div>
+    </div>
+
+    <script src="type_race.js" defer></script>
+  </body>
+  
+</html>
